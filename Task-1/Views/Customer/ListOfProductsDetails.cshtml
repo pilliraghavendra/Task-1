@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Task_1.Models.Product>
+
+
+<table>
+    <thead>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Discription</th>
+        <th>Product Prize</th>
+    </thead>
+    @foreach(var items in Model)
+    {
+        <tr>
+            <td>@items.Id</td>
+            <td>@items.Name</td>
+            <td>@items.Description</td>
+            <td>@items.Price</td>
+        </tr>
+    }
+</table>
